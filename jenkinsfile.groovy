@@ -28,7 +28,7 @@ pipeline{
         script{
         //file.withWriter('utf-8') { 
          //writer -> writer.writeLine 'Hello World' 
-       doc.replaceAll('hi','hello')
+       doc.replaceAll('love','like')
           println doc
    //     }  
         }
