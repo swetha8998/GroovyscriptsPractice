@@ -22,5 +22,16 @@ pipeline{
         }
       }
     }
+    stage("replacing a text in a file"){
+      steps{
+        script{
+        //file.withWriter('utf-8') { 
+         //writer -> writer.writeLine 'Hello World' 
+       file.replace("hi","hello")
+          println file.text
+   //     }  
+        }
+      }
+    }
   } 
 }  
