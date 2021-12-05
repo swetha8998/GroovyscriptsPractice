@@ -4,7 +4,7 @@ pipeline{
     stage("reading a text file"){
       steps{
         script{
-          File file = new File("GroovyscriptsPractice/note.txt") 
+          File file = new File("/note.txt") 
           println file.text 
         }
       } 
