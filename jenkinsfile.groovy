@@ -17,6 +17,7 @@ pipeline{
         //file.withWriter('utf-8') { 
          //writer -> writer.writeLine 'Hello World' 
        file.write("hi")
+          println file.text
    //     }  
         }
       }
