@@ -14,9 +14,10 @@ pipeline{
     stage("writing to the text file"){
       steps{
         script{
-        file.withWriter('utf-8') { 
-         writer -> writer.writeLine 'Hello World' 
-      }  
+        //file.withWriter('utf-8') { 
+         //writer -> writer.writeLine 'Hello World' 
+       file.write("hi")
+        }  
         }
       }
     }
