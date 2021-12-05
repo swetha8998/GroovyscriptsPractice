@@ -1,4 +1,5 @@
 def file
+def doc
 pipeline{
   agent any
   stages{
@@ -7,7 +8,7 @@ pipeline{
         script{
           sh 'pwd'
            file = new File("/var/lib/jenkins/workspace/Jenkins-Groovy-pratice-2/note.txt") 
-          println file.text 
+          doc = file.text 
         }
       } 
     } 
@@ -27,8 +28,8 @@ pipeline{
         script{
         //file.withWriter('utf-8') { 
          //writer -> writer.writeLine 'Hello World' 
-       file.replaceAll('hi','hello')
-          println file.text
+       doc.replaceAll('hi','hello')
+          println doc
    //     }  
         }
       }
