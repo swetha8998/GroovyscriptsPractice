@@ -16,7 +16,7 @@ pipeline{
         script{
         //file.withWriter('utf-8') { 
          //writer -> writer.writeLine 'Hello World' 
-       file.write("hi")
+       file.append("hi")
           println file.text
    //     }  
         }
