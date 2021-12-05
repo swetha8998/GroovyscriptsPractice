@@ -1,5 +1,6 @@
 def file
 def doc
+def doc2
 pipeline{
   agent any
   stages{
@@ -28,8 +29,8 @@ pipeline{
         script{
         //file.withWriter('utf-8') { 
          //writer -> writer.writeLine 'Hello World' 
-       doc.replaceAll('love','like')
-          println doc
+       doc2=doc.replaceAll('love','like')
+          println doc2
    //     }  
         }
       }
